@@ -30,7 +30,19 @@ audio:not([controls]) { display: none; }
  * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
 
-html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; 
+	background: #a90329; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNhOTAzMjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1NCUiIHN0b3AtY29sb3I9IiM4ZjAyMjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMmIwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  #a90329 0%, #8f0222 54%, #2b0000 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#a90329), color-stop(54%,#8f0222), color-stop(100%,#2b0000)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 54%,#2b0000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 54%,#2b0000 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 54%,#2b0000 100%); /* IE10+ */
+	background: radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 54%,#2b0000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#2b0000',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	
+	 }
 
 html, body {width: 100%, height: 100%, }
 
@@ -219,13 +231,55 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
-
-
-div.everything {
-	width: 100%;
-	height: 100%;
-	background-color: red;
+html, h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Monsieur La Doulaise', cursive;
+	font-family: 'Pinyon Script', cursive;
 }
+
+.quote {
+	position:absolute; 
+	top:50%; 
+	left:50%; 
+	z-index:6; 
+	width:800px; 
+	height:300px; 
+	margin:-250px 0 0 -400px;
+/*	background-color: red;*/
+	color: #f99;
+	text-shadow: #700 0 -2px 10px, #100 0 3px 3px, #000 0 1px 0px;
+	font-size: 6em;
+	line-height:1em;
+	padding:50px;
+/*	font-weight:bold;*/
+}
+
+.two{
+	margin:-40px;
+	height:-40px;
+	background-color: yellow;
+	z-index:-5;
+	
+}
+
+.background {
+	display:block; 
+	position:fixed; 
+	left:0; 
+	top:0; 
+	overflow:hidden;
+	background-image:url("images/romance2.jpg");
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	z-index:5; 
+	height:100%; width:100%;
+	opacity:0.35;
+/*	background-color:white;*/
+}
+
+
 
 
 
